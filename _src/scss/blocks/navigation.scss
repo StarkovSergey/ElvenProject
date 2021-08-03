@@ -1,0 +1,30 @@
+.navigation {
+
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  box-sizing: border-box;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 16px;
+  padding-right: 29px;
+  padding-bottom: 19px;
+  padding-left: 26px;
+  border: 2px solid #e8e8e8;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: "Alice", serif;
+  line-height: 34px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+.intro {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-image: url("../img/intro/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 315px;
+  font-weight: bold;
+  font-size: 200px;
+  font-family: "Tangerine", fantasy;
+  font-style: normal;
+  line-height: 200px;
+}
+
+.intro__text-box {
+  align-self: end;
+  max-width: 814px;
+  padding: 22px 27px;
+  background-color: var(--green-transparent);
+}
+
+.intro__text {
+  font-size: 32px;
+  line-height: 37px;
+}

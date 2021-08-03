@@ -1,4 +1,6 @@
 .content {
+  position: relative;
+  z-index: 1;
   padding-top: 80px;
   padding-bottom: 140px;
   background-image: url("../img/content/background-image.jpg");

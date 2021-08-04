@@ -4,62 +4,123 @@
     <meta charset="UTF-8" />
     <title>Elf Maranwe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicons/favicon16.ico" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Roboto&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Roboto&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page__body">
     <header class="header">
       <div class="container">
-        <nav class="header__navigation  navigation">
+        <nav class="header__navigation navigation">
+          <a href="#" class="navigation__logo logo">
+            <img
+              src="img/logo/logo.png"
+              alt="Logo"
+              class="logo__image"
+              width="150"
+              height="150"
+            />
+          </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">item</a>
+              <a class="navigation__link" href="#">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Видео</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Продукция</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Продукция</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Продукция</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Item</a>
+              <a class="navigation__link" href="#">Контакты</a>
             </li>
           </ul>
+
+          <div class="navigation__language language-menu">
+            <button class="language-menu__selected-lang">English</button>
+            <ul class="language-menu__list">
+              <li class="language-menu__item">
+                <a class="language-menu__link language-menu__link--ru" href=""
+                  >Russian</a
+                >
+              </li>
+              <li class="language-menu__item">
+                <a class="language-menu__link language-menu__link--us" href=""
+                  >English</a
+                >
+              </li>
+              <li class="language-menu__item">
+                <a class="language-menu__link language-menu__link--de" href=""
+                  >German</a
+                >
+              </li>
+              <li class="language-menu__item">
+                <a class="language-menu__link language-menu__link--fr" href=""
+                  >French</a
+                >
+              </li>
+              <li class="language-menu__item">
+                <a class="language-menu__link language-menu__link--es" href=""
+                  >Spanish</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
     <main class="main">
-      <section class="intro  section">
+      <section class="intro section">
         <div class="intro__row container">
-          <h1 class="intro__title">Elf Maranwe</h1>
+          <h1 class="intro__title">Elf Mar anwe</h1>
           <div class="intro__text-box">
             <p class="intro__text">
-              Приветствую вас, друзья! Рад, что вы решили зайти на мой сайт. Здесь будут анонсироваться важные новости, связанные с проектом Elf Maranwe. Так же в будущем здесь вы сможете найти фотографии, которых нет в социальных сетях, эксклюзивные видео-обращения и продукцию для тех, кто хочет поддержать проект.
+              Приветствую вас, друзья! Рад, что вы решили зайти на мой сайт.
+              Здесь будут анонсироваться важные новости, связанные с проектом
+              Elf Maranwe. Так же в будущем здесь вы сможете найти фотографии,
+              которых нет в социальных сетях, эксклюзивные видео-обращения и
+              продукцию для тех, кто хочет поддержать проект.
             </p>
             <p class="intro__text">
-              Мне приятна ваша поддержка и искренний интерес. Я верю, что сообща мы сможем сделать наш мир лучшим местом. Желаю вам духовного, умственного и физического здоровья. С уважением, Elf Maranwe
+              Мне приятна ваша поддержка и искренний интерес. Я верю, что сообща
+              мы сможем сделать наш мир лучшим местом. Желаю вам духовного,
+              умственного и физического здоровья. С уважением, Elf Maranwe
             </p>
           </div>
         </div>
       </section>
 
-      <section class="content">
+      <section class="content" style="display: none">
         <div class="container">
-          <ul class="content__photo-list  photo-list">
+          <ul class="content__photo-list photo-list">
             <li class="photo-list__item">
-              <img src="img/content/photo-1.png" alt="" width="374" height="454">
+              <img
+                src="img/content/photo-1.png"
+                alt=""
+                width="374"
+                height="454"
+              />
             </li>
             <li class="photo-list__item">
-              <img src="img/content/photo-1.png" alt="" width="374" height="454">
+              <img
+                src="img/content/photo-1.png"
+                alt=""
+                width="374"
+                height="454"
+              />
             </li>
             <li class="photo-list__item">
-              <img src="img/content/photo-1.png" alt="" width="374" height="454">
+              <img
+                src="img/content/photo-1.png"
+                alt=""
+                width="374"
+                height="454"
+              />
             </li>
           </ul>
           <div class="content__video video">
@@ -68,20 +129,20 @@
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" style="display: none">
         <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="">
+              <img src="img/catalog/product-1.png" alt="" />
             </li>
             <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="">
+              <img src="img/catalog/product-1.png" alt="" />
             </li>
             <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="">
+              <img src="img/catalog/product-1.png" alt="" />
             </li>
             <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="">
+              <img src="img/catalog/product-1.png" alt="" />
             </li>
           </ul>
         </div>

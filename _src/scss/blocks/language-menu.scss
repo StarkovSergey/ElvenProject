@@ -7,6 +7,11 @@
   &:focus .language-menu__list {
     display: block;
   }
+
+  @media (max-width: 670px) {
+    margin-right: 20px;
+    margin-left: auto;
+  }
 }
 
 .language-menu__selected-lang {
@@ -18,7 +23,7 @@
   font-family: "Alice";
   cursor: pointer;
 
-  @media (max-width: 930px) {
+  @media (max-width: 935px) {
     font-size: 16px;
   }
 
@@ -35,6 +40,7 @@
 .language-menu__list {
   position: absolute;
   top: 50px;
+  right: -20px;
   z-index: 3;
   display: none;
   margin: 0;
@@ -56,6 +62,11 @@
   width: 180px;
   padding: 5px 10px;
   transition: background-color 200ms ease 0s;
+
+  @media (max-width: 935px) {
+    width: 130px;
+    font-size: 16px;
+  }
 
   &:hover,
   &:focus {

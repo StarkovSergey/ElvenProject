@@ -15,7 +15,7 @@
   <body class="page__body">
     <header class="header">
       <div class="container">
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation navigation  navigation--opened  navigation--nojs">
           <a href="#" class="navigation__logo logo">
             <img
               src="img/logo/logo.png"
@@ -39,6 +39,7 @@
               <a class="navigation__link" href="#">Контакты</a>
             </li>
           </ul>
+
 
           <div class="navigation__language language-menu">
             <button class="language-menu__selected-lang">English</button>
@@ -70,6 +71,9 @@
               </li>
             </ul>
           </div>
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Open the menu</span>
+          </button>
         </nav>
       </div>
     </header>

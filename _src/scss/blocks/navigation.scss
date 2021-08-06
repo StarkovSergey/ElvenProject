@@ -7,6 +7,11 @@
     justify-content: center;
     padding-top: 20px;
   }
+
+  @media (max-width: 670px) {
+    justify-content: space-between;
+    padding-top: 0;
+  }
 }
 
 .navigation__list {
@@ -46,7 +51,7 @@
     background-color: var(--green);
   }
 
-  @media (max-width: 930px) {
+  @media (max-width: 940px) {
     padding: 5px 10px;
     border: 1px solid #e8e8e8;
     font-size: 16px;
@@ -64,4 +69,83 @@
   @media (max-width: 1100px) {
     display: none;
   }
+
+  @media (max-width: 670px) {
+    display: block;
+    width: 100px;
+  }
+}
+
+/* ------------------------------------*|
+  #toggle
+/*------------------------------------ */
+
+.navigation--closed .navigation__toggle {
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+
+  &::before {
+    @media (max-width: 670px) {
+      display: block;
+      width: 36px;
+      height: 2px;
+      margin-bottom: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+      content: "";
+    }
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation--closed .navigation__list {
+  @media (max-width: 670px) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__list {
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  left: 20px; //указали и left, и right => меню растянулось
+  z-index: 10;
+  flex-direction: column;
+  background-color: var(--basic-black);
+
+  .navigation__item {
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.navigation--opened .language-menu {
+  display: none;
 }

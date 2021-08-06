@@ -132,17 +132,25 @@
 
 .navigation--opened .navigation__list {
   position: absolute;
+  height: 100vh;
   top: 140px;
-  right: 20px;
-  left: 20px; //указали и left, и right => меню растянулось
+  right: 0px;
+  left: 0px; //указали и left, и right => меню растянулось
+  padding: 0 20px;
   z-index: 10;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: var(--basic-black);
 
   .navigation__item {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-left: 0;
     text-align: center;
+  }
+
+  .navigation__link {
+    padding: 20px 0;
+    font-size: 25px;
   }
 }
 

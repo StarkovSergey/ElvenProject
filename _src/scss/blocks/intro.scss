@@ -2,18 +2,35 @@
   position: relative;
   z-index: 1;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-image: url("../img/intro/background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
+  @media (max-width: 940px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 670px) {
+    padding-top: 20px;
+  }
+
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     width: 100%;
     height: 70px;
     background-image: linear-gradient(#000000, transparent);
+    content: "";
+
+    @media (max-width: 940px) {
+      height: 50px;
+    }
+
+    @media (max-width: 670px) {
+      height: 30px;
+    }
   }
 }
 
@@ -30,6 +47,22 @@
   font-family: "Tangerine", fantasy;
   font-style: normal;
   line-height: 200px;
+
+  @media (max-width: 940px) {
+    margin-bottom: 215px;
+    font-size: 150px;
+    text-align: center;
+  }
+
+  @media (max-width: 670px) {
+    margin-bottom: 115px;
+    font-size: 80px;
+  }
+
+  @media (max-width: 380px) {
+    margin-bottom: 115px;
+    font-size: 60px;
+  }
 }
 
 .intro__text-box {
@@ -37,9 +70,36 @@
   max-width: 814px;
   padding: 22px 27px;
   background-color: var(--green-transparent);
+
+  @media (max-width: 940px) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 670px) {
+    width: 100%;
+  }
+
+  @media (max-width: 380px) {
+    padding: 15px 20px;
+  }
 }
 
 .intro__text {
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 30px;
+  line-height: 45px;
+
+  @media (max-width: 940px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 670px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }

@@ -1,0 +1,17 @@
+.section__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: "Alice", serif;
+  text-align: center;
+
+  @media (max-width: 940px) {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 670px) {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+}

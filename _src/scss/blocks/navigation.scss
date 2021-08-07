@@ -80,10 +80,20 @@
   #toggle
 /*------------------------------------ */
 
-.navigation--closed .navigation__toggle {
-  position: relative;
+.navigation__toggle {
+  width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: opacity 200ms ease 0s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  position: relative;
 
   &::before {
     @media (max-width: 670px) {
@@ -100,9 +110,6 @@
 
 .navigation--opened .navigation__toggle {
   display: block;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
 
   &::before,
   &::after {
@@ -132,14 +139,14 @@
 
 .navigation--opened .navigation__list {
   position: absolute;
-  height: 100vh;
   top: 140px;
-  right: 0px;
-  left: 0px; //указали и left, и right => меню растянулось
-  padding: 0 20px;
+  right: 0;
+  left: 0; //указали и left, и right => меню растянулось
   z-index: 10;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100vh;
+  padding: 0 20px;
   background-color: var(--basic-black);
 
   .navigation__item {

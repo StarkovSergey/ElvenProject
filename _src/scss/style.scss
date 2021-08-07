@@ -1,14 +1,15 @@
 @import "configs/variables.scss";
 @import "configs/fonts.scss";
+@import "configs/swiper.scss";
 
 @import "global.scss";
-
 
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/language-menu.scss";
 @import "blocks/intro.scss";
 @import "blocks/content.scss";
+@import "blocks/photo.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/catalog.scss";
 @import "blocks/footer.scss";

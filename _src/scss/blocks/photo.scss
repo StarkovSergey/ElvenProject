@@ -1,0 +1,83 @@
+.photo__slider {
+}
+
+.photo__container {
+  @media (max-width: 960px) {
+    padding: 0;
+  }
+}
+
+.photo__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  list-style: none;
+
+  @media (max-width: 1350px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 960px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 520px) {
+    max-width: 280px;
+  }
+}
+
+.photo__slide {
+}
+
+.photo__image {
+  position: relative;
+  flex-shrink: 0;
+  width: 320px;
+  height: 388px;
+
+  @media (max-width: 960px) {
+    width: 500px;
+    height: 606px;
+  }
+
+  @media (max-width: 520px) {
+    width: 280px;
+    height: 340px;
+  }
+}
+
+.photo__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* arrows */
+
+.photo__slider .swiper-button-prev::after,
+.photo__slider .swiper-button-next::after {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+/* pagination */
+
+.photo__slider .swiper-pagination {
+  bottom: 0;
+}
+
+/* bullets */
+
+.photo__slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20;
+  background-color: #ffffff;
+}

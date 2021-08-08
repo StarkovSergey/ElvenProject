@@ -1,1 +1,1 @@
-import"./util/toggle.js";import"./libraries/swiper.js";const swiper=new Swiper(".photo__slider",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0},clickable:!0,slideToClickedSlide:!0,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},breakpoints:{1350:{slidesPerView:3},960:{slidesPerView:2,spaceBetween:10},320:{slidesPerView:1}},watchOverflow:!0});
+import"./util/toggle.js";import"./libraries/swiper.js";import{swiperPhoto}from"./util/photo-slider.js";import{swiperVideo}from"./util/video-slider.js";

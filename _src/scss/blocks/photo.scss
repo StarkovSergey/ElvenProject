@@ -37,11 +37,18 @@
   flex-shrink: 0;
   width: 320px;
   height: 388px;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 500px;
     height: 606px;
   }
+
+  // @media (max-width: 800px) {
+  //   width: 430px;
+  //   height: 518px;
+  // }
+
 
   @media (max-width: 520px) {
     width: 280px;

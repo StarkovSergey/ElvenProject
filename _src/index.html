@@ -105,7 +105,7 @@
       </section>
 
       <div class="content">
-        <section class="section photo" id="photo-section">
+        <section class="section content__photo photo" id="photo-section">
           <div class="photo__container container">
             <h2 class="section__title">Photos</h2>
             <!-- Slider main container -->
@@ -153,8 +153,50 @@
             </div>
           </div>
         </section>
-        <section class="video">
-          <div class="container"></div>
+
+        <section class="content__video video">
+          <div class="container">
+            <h2 class="section__title">Videos</h2>
+
+            <!-- Slider main container -->
+            <div class="video__slider swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="video__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="video__slide swiper-slide">
+                  <iframe
+                    class="video__iframe"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/qtRIPb0ufgU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="video__slide swiper-slide">
+                  <iframe
+                    class="video__iframe"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/cGk8WA608qM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
         </section>
       </div>
 

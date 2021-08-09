@@ -1,0 +1,67 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(3, 60px);
+  }
+}
+
+.social__item {
+}
+
+.social__svg {
+  transition: fill 200ms ease 0s;
+  fill: var(--basic-white);
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  transition: background-color 200ms ease 0s;
+
+  &:hover,
+  &:focus {
+    background-color: var(--basic-white);
+
+    .social__svg {
+      fill: var(--green);
+    }
+  }
+
+  &--youtube {
+  }
+
+  &--facebook {
+  }
+
+  &--instagram {
+  }
+
+  &--tiktok {
+  }
+
+  &--twitter {
+  }
+
+  &--vkontakte {
+  }
+
+  &--mixi {
+  }
+
+  &--reddit {
+  }
+
+  &--pikabu {
+  }
+}

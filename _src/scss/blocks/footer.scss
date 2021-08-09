@@ -1,12 +1,67 @@
 .footer {
   position: relative;
-  min-height: 613px;
+  min-height: 500px;
+  padding-top: 130px;
   background-image: url("../img/footer/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 1200px) {
+    min-height: 400px;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: 420px) {
+    padding-top: 50px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(#000000, transparent);
+    content: "";
+
+    @media (max-width: 940px) {
+      height: 50px;
+    }
+
+    @media (max-width: 670px) {
+      height: 30px;
+    }
+  }
 }
 
+.footer__title {
+}
 
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+}
+
+.footer__logo {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.logo {
+}
+
+/* ------------------------------------*|
+  #animation
+/*------------------------------------ */
 
 .firefly {
   position: fixed;
@@ -19,7 +74,8 @@
   pointer-events: none;
 }
 
-.firefly::before, .firefly::after {
+.firefly::before,
+.firefly::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1709,7 +1765,9 @@
 }
 
 @keyframes flash {
-  0%, 30%, 100% {
+  0%,
+  30%,
+  100% {
     box-shadow: 0 0 0 0 yellow;
     opacity: 0;
   }

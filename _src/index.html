@@ -88,7 +88,7 @@
               <a class="navigation__link" href="#video-section">Videos</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Products</a>
+              <a class="navigation__link" href="#catalog">Products</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#contacts">Contacts</a>
@@ -159,7 +159,7 @@
           <div class="photo__container container">
             <h2 class="section__title">Photos</h2>
             <!-- Slider main container -->
-            <div class="photo__slider swiper-container">
+            <div class="photo__slider swiper-container  slider">
               <!-- Additional required wrapper -->
               <ul class="photo__wrapper swiper-wrapper">
                 <!-- Slides -->
@@ -195,11 +195,11 @@
                 </li>
               </ul>
               <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination  slider__pagination"></div>
 
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev  slider__button  slider__button--prev"></div>
+              <div class="swiper-button-next  slider__button  slider__button--next"></div>
             </div>
           </div>
         </section>
@@ -209,7 +209,7 @@
             <h2 class="section__title">Videos</h2>
 
             <!-- Slider main container -->
-            <div class="video__slider swiper-container">
+            <div class="video__slider swiper-container  slider">
               <!-- Additional required wrapper -->
               <div class="video__wrapper swiper-wrapper">
                 <!-- Slides -->
@@ -226,7 +226,7 @@
                   ></iframe>
                 </div>
 
-                <div class="video__slide swiper-slide">
+                <!-- <div class="video__slide swiper-slide">
                   <iframe
                     class="video__iframe"
                     width="560"
@@ -237,35 +237,158 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
-                </div>
+                </div> -->
               </div>
               <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination  slider__pagination"></div>
 
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev  slider__button  slider__button--prev"></div>
+              <div class="swiper-button-next  slider__button  slider__button--next"></div>
             </div>
           </div>
         </section>
       </div>
 
-      <section class="catalog" style="display: none">
+      <section class="catalog" id="catalog">
         <div class="container">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="" />
-            </li>
-            <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="" />
-            </li>
-            <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="" />
-            </li>
-            <li class="catalog__item">
-              <img src="img/catalog/product-1.png" alt="" />
-            </li>
-          </ul>
+          <h2 class="section__title">Products</h2>
+
+          <div class="catalog__slider  swiper-container  slider">
+
+            <ul class="catalog__wrapper  swiper-wrapper">
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/450" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/750" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/850" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination  slider__pagination  catalog__pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev  slider__button  slider__button--prev"></div>
+            <div class="swiper-button-next  slider__button  slider__button--next"></div>
+          </div>
+
+          <div class="catalog__slider  swiper-container  slider">
+
+            <ul class="catalog__wrapper  swiper-wrapper">
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/455/450" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/758" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/590/855" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination  slider__pagination  catalog__pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev  slider__button  slider__button--prev"></div>
+            <div class="swiper-button-next  slider__button  slider__button--next"></div>
+          </div>
+
+          <div class="catalog__slider  swiper-container  slider">
+
+            <ul class="catalog__wrapper  swiper-wrapper">
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/450/450" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/750" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__slide  swiper-slide">
+                <div class="catalog__item  item">
+                  <div class="item__image">
+                    <img src="//unsplash.it/550/850" alt="">
+                  </div>
+                  <div class="item__description">
+                    <h3 class="item__title">T-shirt</h3>
+                    <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem tempora illo in vel, et, voluptate commodi harum aperiam rem, totam ab? Distinctio asperiores quia, nostrum ipsam doloribus rerum temporibus.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination  slider__pagination  catalog__pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev  slider__button  slider__button--prev"></div>
+            <div class="swiper-button-next  slider__button  slider__button--next"></div>
+          </div>
+
         </div>
       </section>
     </main>

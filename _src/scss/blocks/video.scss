@@ -4,27 +4,14 @@
 .video__slider {
 }
 
-.video__wrapper {
-  padding-bottom: 40px;
-}
+
 
 .video__slide {
-  text-align: center;
-}
-
-/* arrows */
-
-.video__slider .swiper-button-prev::after,
-.video__slider .swiper-button-next::after {
-  color: #ffffff;
-  font-size: 50px;
+text-align: center;
 }
 
 /* pagination */
 
-.video__slider .swiper-pagination {
-  bottom: 0px;
-}
 
 .video__slider .swiper-pagination-bullet {
   width: 20px;

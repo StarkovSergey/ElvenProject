@@ -25,7 +25,7 @@
 
   @media (max-width: 750px) {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -44,6 +44,7 @@
 
 .item__title {
   margin: 0;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 30px;
   font-family: "Alice", serif;
@@ -60,6 +61,7 @@
 }
 
 .item__text {
+  margin: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;

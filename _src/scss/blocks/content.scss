@@ -40,7 +40,7 @@
     bottom: 0;
     width: 100%;
     height: 70px;
-    background-image: linear-gradient(transparent, #000000,);
+    background-image: linear-gradient(transparent, #000000);
     content: "";
 
     @media (max-width: 940px) {
@@ -53,7 +53,14 @@
   }
 }
 
-
 .content__photo {
   margin-bottom: 100px;
+
+  @media (max-width: 940px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 670px) {
+    margin-bottom: 30px;
+  }
 }

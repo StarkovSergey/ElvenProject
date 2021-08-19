@@ -17,10 +17,11 @@ const swiperPhoto = new Swiper('.photo__slider', {
   breakpoints: {
     1350: {
       slidesPerView: 3,
+      spaceBetween: 20,
     },
     960: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
     320: {
       slidesPerView: 1,

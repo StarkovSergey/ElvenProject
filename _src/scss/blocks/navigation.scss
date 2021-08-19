@@ -21,6 +21,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 670px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .navigation__item {

@@ -98,6 +98,11 @@
 
 .navigation--closed .navigation__toggle {
   position: relative;
+  display: none;
+
+  @media (max-width: 670px) {
+    display: block;
+  }
 
   &::before {
     @media (max-width: 670px) {

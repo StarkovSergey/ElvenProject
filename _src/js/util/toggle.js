@@ -14,3 +14,13 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('navigation--opened');
   }
 });
+
+const navLinks = document.querySelectorAll('.navigation__link');
+for (const link of navLinks) {
+  link.addEventListener('click', () => {
+    if (navMain.classList.contains('navigation--opened')) {
+      navMain.classList.add('navigation--closed');
+      navMain.classList.remove('navigation--opened');
+    }
+  });
+}
